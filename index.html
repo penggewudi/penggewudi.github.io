@@ -1,0 +1,236 @@
+<!DOCTYPE html><html lang="zh-Hans" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>人生苦短 - 喜而不狂，忧而不伤~</title><meta name="author" content="Shiny Peng"><meta name="copyright" content="Shiny Peng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="记录汗水和努力，留下足迹 (*^▽^*)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="人生苦短">
+<meta property="og:url" content="https://penggewudi.github.io/index.html">
+<meta property="og:site_name" content="人生苦短">
+<meta property="og:description" content="记录汗水和努力，留下足迹 (*^▽^*)">
+<meta property="og:locale">
+<meta property="og:image" content="https://penggewudi.github.io/null">
+<meta property="article:author" content="Shiny Peng">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://penggewudi.github.io/null"><link rel="shortcut icon" href="/img/home_l.ico"><link rel="canonical" href="https://penggewudi.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  ClickShowText: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2020-11-07 17:23:17'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}})()</script><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="人生苦短" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/null" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">7</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">5</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" target="_blank" rel="noopener" href="https://music.163.com/#/user/home?id=270942484"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li></ul></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://github.com/penggewudi"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">人生苦短</a></span><span id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" target="_blank" rel="noopener" href="https://music.163.com/#/user/home?id=270942484"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li></ul></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://github.com/penggewudi"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site-title">人生苦短</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/penggewudi" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:shiny_dpeng@163com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/11/07/hello-world/" title="Hello World">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/07/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-11-07T08:40:17.948Z" title="Created 2020-11-07 16:40:17">2020-11-07</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
+
+More info: Writing
+Run server1$ hexo server
+
+More info: Server
+Generate static files1$ hexo generate
+
+More info: Generating
+Deploy to remote sites1$ hexo deploy
+
+More info: Deployment
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/11/07/LSTM-GRU-%E5%A4%84%E7%90%86%E5%AE%9A%E9%95%BF-%E9%9D%9E%E5%AE%9A%E9%95%BF%E6%95%B0%E6%8D%AE-%E7%BB%93%E6%9E%9C%E8%BE%93%E5%87%BA/" title="LSTM/GRU 处理定长/非定长数据 结果输出">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="LSTM/GRU 处理定长/非定长数据 结果输出"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/07/LSTM-GRU-%E5%A4%84%E7%90%86%E5%AE%9A%E9%95%BF-%E9%9D%9E%E5%AE%9A%E9%95%BF%E6%95%B0%E6%8D%AE-%E7%BB%93%E6%9E%9C%E8%BE%93%E5%87%BA/" title="LSTM/GRU 处理定长/非定长数据 结果输出">LSTM/GRU 处理定长/非定长数据 结果输出</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-11-07T07:49:22.000Z" title="Created 2020-11-07 15:49:22">2020-11-07</time></span></div><div class="content">LSTM / GRU 处理定长/非定长数据 输出在利用LSTM/GRU等循环神经网络处理序列数据时，我们会考虑到网络的输出，由于之前对于LSTM/GRU都是直接调用pytorch的库函数，大概的看了一下官网的tutorial ,了解网络的输入与输出，大多数情况下使用起来也是没有问题的，但是在最近的一次实验中翻车了，不得不让我重新对其机制进行深入的学习和了解。
+LSTM/GRU简介如果你对lstm/gru网络不是很熟悉和了解，可以参考下面两篇知乎文章，或者台大李宏毅老师的ppt或课程视频，贴一下链接吧~
+LSTM GRU RNN videoRNN Slide(http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2016/Lecture/RNN%20(v2).pdf)
+模型输出（定长数据）这是本文讨论的主要问题，在我们平时使用LSTM/GRU网络时，大多数情况下数据数据为定长多维数据，
+input （暂不考虑隐层初始输入和记忆单元初始输入） 为  [batch_size, seq_len, input_dim], 
+output（暂不考虑隐层初始输 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/06/15/Git%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" title="Git的使用说明">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Git的使用说明"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/06/15/Git%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" title="Git的使用说明">Git的使用说明</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-06-15T08:22:49.000Z" title="Created 2020-06-15 16:22:49">2020-06-15</time></span></div><div class="content">
+
+Git的使用说明介绍Git是我们程序员日常开发中必不可少的一个开发工具，可以有效地帮助我们进行开发项目的版本控制，团队写作等，极大地方便了我们的开发工作，刚好最近学习了git的相关的知识内容，我将会把常用的命令和解释罗列出来方便大家的参考，也方便我自己日后的回顾。
+安装配置首先需要下载git 官方下载网址，下载完成之后，按照说明进行安装，然后正常情况下就会出现两个安装好的程序git base和git gui,在我们平常的使用中我们一般都使用git base这个程序，点开之后我们发现其界面和操作逻辑和linux的中断控制台的逻辑相似所以对于有开发经验的同学来说还是比较容易熟悉和上手的，在控制台(cmd/terminal)中输入下列指令即可参看版本号,若能正常显示则表示安装成功。
+1git --version  #查看 git 版本号
+初始配置在我们使用git之前，我们首先需要配置相关的用户信息，也就是让git知道每次是谁提交了信息，需要配置用户名称和电子邮箱，配置文件的地址为~/.gitconfig,这个文件是执行任何git命令后自动创建的，默认的文件位置在当前用户名的下C:\Use ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/06/13/ReStart/" title="ReStart">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ReStart"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/06/13/ReStart/" title="ReStart">ReStart</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-06-13T14:01:56.000Z" title="Created 2020-06-13 22:01:56">2020-06-13</time></span></div><div class="content">时间过得飞快，距离上一次写这个blog以及有几乎两年之久了，依稀还记得当时熬夜配置HEXO框架的情形，迫不及待的上传了第一篇的blog到github pages的场景，似乎那时候又用不完的精力去折腾去玩，后来应为考研的缘故也手上所有的东西就先放下来了，没有时间去玩了，陪伴的就只是试卷和题目了，时至今日也算是如愿以偿的成为了一名渣渣研究生，我想也是时候慢慢的把自己的blog捡起来了，我觉得可以在这里分享一下我的学习过程和采坑过程，要不然的话同时有一种啥也没有学到手的感觉，内心空荡荡~
+
+记录学习的内容，分享学习的一些心得
+记录自己的踩坑的问题和经验，方便日后查看和回顾
+写点有的没的，哈哈哈
+
+ </div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2018/06/22/%E9%9A%8F%E7%AC%94/" title="随笔">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="随笔"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/06/22/%E9%9A%8F%E7%AC%94/" title="随笔">随笔</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2018-06-22T13:31:59.000Z" title="Created 2018-06-22 21:31:59">2018-06-22</time></span></div><div class="content">我发现冰岛真的是一个神奇的国家，只有几十万人口的小国竟然踢进了世界杯而且踢平了阿根廷，真的是难以置信，但是后来我发现维京后裔是真的强，而且看到下面这张图真的感觉……
+冰岛是我世界杯快乐之源泉，哈哈哈~
+![哈哈哈](https://i.loli.net/2018/06/22/5b2cf7df99632.gif)
+
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2018/06/10/Computer-Operation-System/" title="Computer Operation System">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Computer Operation System"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/06/10/Computer-Operation-System/" title="Computer Operation System">Computer Operation System</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2018-06-10T12:48:49.000Z" title="Created 2018-06-10 20:48:49">2018-06-10</time></span></div><div class="content">操作系统打卡~老师的声音很好听，讲的也非常仔细，比喻之王，哈哈哈~
+click here for more
+
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2018/06/06/Lanch-Github-Pages-Hexo/" title="Lanch Github Pages &amp; Hexo">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Lanch Github Pages &amp; Hexo"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/06/06/Lanch-Github-Pages-Hexo/" title="Lanch Github Pages &amp; Hexo">Lanch Github Pages &amp; Hexo</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2018-06-06T01:34:23.000Z" title="Created 2018-06-06 09:34:23">2018-06-06</time></span></div><div class="content">今天无意间打开了一篇博客，讲到了github page建站的东西，很是感兴趣，因为之前也搞过一段时间的Wordpress，不知道为啥，搞这种很有个性的骚动西总是能吊足我的胃口，我觉得不吃不喝都可以。回想起我之前的建站经历
+
+ 那是相当的顺利 一句
+
+1$  Rm-rf
+
+贯穿了我整个建站之路。
+
+先忏悔一下🌚
+现在想想当时踩了那么多的坑，花了那么多的时间，去配置环境，现在一行code所有的努力好像都付之东流了😭就感觉少活了一段时间似的，血亏。
+
+本来是考研看书时间，我又手贱的点开了知乎、csdn、github、简书…..然后我就知道今天一天就会被邪恶的电脑所吞噬了，看来下次不能带电脑了😂🌚😭忏悔一下忏悔一下。
+
+
+分享一下我的感受吧。
+
+首先从建站的难度上来说，因为我之前熟悉过git已经github的使用，相对来说，并没有那么困难，只需要再依赖一下node.js就可以了，环境配置基本很顺利。
+
+hexo确实是一个很好的静态网站平台，而且访问可以依托于github，说到底，还是我大github威武，开源大法好！（好像github要被微软爸爸收购了，希望他们强强联手共同建造一个好 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/null" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Shiny Peng</div><div class="author-info__description">记录汗水和努力，留下足迹 (*^▽^*)</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">7</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">5</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/penggewudi" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:shiny_dpeng@163com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2020/11/07/hello-world/" title="Hello World"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2020/11/07/hello-world/" title="Hello World">Hello World</a><time datetime="2020-11-07T08:40:17.948Z" title="Created 2020-11-07 16:40:17">2020-11-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/07/LSTM-GRU-%E5%A4%84%E7%90%86%E5%AE%9A%E9%95%BF-%E9%9D%9E%E5%AE%9A%E9%95%BF%E6%95%B0%E6%8D%AE-%E7%BB%93%E6%9E%9C%E8%BE%93%E5%87%BA/" title="LSTM/GRU 处理定长/非定长数据 结果输出"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="LSTM/GRU 处理定长/非定长数据 结果输出"/></a><div class="content"><a class="title" href="/2020/11/07/LSTM-GRU-%E5%A4%84%E7%90%86%E5%AE%9A%E9%95%BF-%E9%9D%9E%E5%AE%9A%E9%95%BF%E6%95%B0%E6%8D%AE-%E7%BB%93%E6%9E%9C%E8%BE%93%E5%87%BA/" title="LSTM/GRU 处理定长/非定长数据 结果输出">LSTM/GRU 处理定长/非定长数据 结果输出</a><time datetime="2020-11-07T07:49:22.000Z" title="Created 2020-11-07 15:49:22">2020-11-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/06/15/Git%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" title="Git的使用说明"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Git的使用说明"/></a><div class="content"><a class="title" href="/2020/06/15/Git%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" title="Git的使用说明">Git的使用说明</a><time datetime="2020-06-15T08:22:49.000Z" title="Created 2020-06-15 16:22:49">2020-06-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/06/13/ReStart/" title="ReStart"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ReStart"/></a><div class="content"><a class="title" href="/2020/06/13/ReStart/" title="ReStart">ReStart</a><time datetime="2020-06-13T14:01:56.000Z" title="Created 2020-06-13 22:01:56">2020-06-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2018/06/22/%E9%9A%8F%E7%AC%94/" title="随笔"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="随笔"/></a><div class="content"><a class="title" href="/2018/06/22/%E9%9A%8F%E7%AC%94/" title="随笔">随笔</a><time datetime="2018-06-22T13:31:59.000Z" title="Created 2018-06-22 21:31:59">2018-06-22</time></div></div></div></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/Git/" style="font-size: 1.1em; color: #999">Git</a> <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 1.5em; color: #99a9bf">学习</a> <a href="/tags/%E5%BB%BA%E7%AB%99/" style="font-size: 1.1em; color: #999">建站</a> <a href="/tags/%E8%80%83%E7%A0%94/" style="font-size: 1.1em; color: #999">考研</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 1.1em; color: #999">随笔</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/11/"><span class="card-archive-list-date">November 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/06/"><span class="card-archive-list-date">June 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2018/06/"><span class="card-archive-list-date">June 2018</span><span class="card-archive-list-count">3</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">7</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2020-11-07T09:23:17.797Z"></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 By Shiny Peng</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/f65ee21e.js","daovoice")
+</script><script>var isChatBtn = false
+daovoice('init', {
+  app_id: 'f65ee21e',},{
+  launcher: { 
+     disableLauncherIcon: isChatBtn // 悬浮 ICON 是否显示
+  },
+});
+daovoice('update');
+
+if (isChatBtn) {
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      daovoice('show')
+    });
+  }
+  chatBtnFn()
+} else {
+  if (false) {
+    function chatBtnHide () {
+      daovoice('update', {},{
+        launcher: { 
+        disableLauncherIcon: true // 悬浮 ICON 是否显示
+        },
+      });
+    }
+    function chatBtnShow () {
+      daovoice('update', {},{
+        launcher: { 
+        disableLauncherIcon: false // 悬浮 ICON 是否显示
+        },
+      });
+    }
+  }
+}</script></div></body></html>
