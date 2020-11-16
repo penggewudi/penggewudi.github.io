@@ -102,13 +102,6 @@
   </url>
   
   <url>
-    <loc>https://penggewudi.github.io/tags/pytorch/</loc>
-    <lastmod>2020-11-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://penggewudi.github.io/tags/Git/</loc>
     <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
@@ -117,6 +110,13 @@
   
   <url>
     <loc>https://penggewudi.github.io/tags/%E5%BB%BA%E7%AB%99/</loc>
+    <lastmod>2020-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://penggewudi.github.io/tags/pytorch/</loc>
     <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
