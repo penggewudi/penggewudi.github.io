@@ -150,9 +150,9 @@
     
     
     
-    <category term="pytorch" scheme="https://penggewudi.github.io/tags/pytorch/"/>
-    
     <category term="学习" scheme="https://penggewudi.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="pytorch" scheme="https://penggewudi.github.io/tags/pytorch/"/>
     
   </entry>
   
