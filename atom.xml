@@ -6,7 +6,7 @@
   <link href="https://penggewudi.github.io/atom.xml" rel="self"/>
   
   <link href="https://penggewudi.github.io/"/>
-  <updated>2021-04-27T07:34:06.493Z</updated>
+  <updated>2021-04-27T09:01:06.087Z</updated>
   <id>https://penggewudi.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Bubble Sort</title>
-    <link href="https://penggewudi.github.io/2021/04/27/Bubble-Sort/"/>
-    <id>https://penggewudi.github.io/2021/04/27/Bubble-Sort/</id>
-    <published>2021-04-27T06:39:05.000Z</published>
-    <updated>2021-04-27T07:34:06.493Z</updated>
+    <link href="https://penggewudi.github.io/2021/02/27/Bubble-Sort/"/>
+    <id>https://penggewudi.github.io/2021/02/27/Bubble-Sort/</id>
+    <published>2021-02-27T06:39:05.000Z</published>
+    <updated>2021-04-27T09:01:06.087Z</updated>
     
     <content type="html"><![CDATA[<p><strong>冒泡排序</strong>通过多次遍历列表，与之相邻的元素进行比较，将不合乎顺序的元素进行交换，每一次遍历都将下一个最大值放在正确的位置上，每一个元素通过==冒泡==的形式找到属于自己的一个位置。</p><p>为了进一步展示排序过程中元素的位置变化，将示意图展示如下:<br><img src= "/img/loading.gif" data-lazy-src="https://img-blog.csdnimg.cn/20210427150219674.gif#pic_center" alt="Bubble Sort"></p><p>Python代码编写如下:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bubblesort</span>(<span class="params"> sequence</span>):</span></span><br><span class="line">    <span class="keyword">for</span> t <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(sequence)<span class="number">-1</span>, <span class="number">0</span>, <span class="number">-1</span>):</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(t):</span><br><span class="line">            <span class="keyword">if</span> sequence[i]&gt;sequence[i+<span class="number">1</span>]:</span><br><span class="line">                temp = sequence[i]</span><br><span class="line">                sequence[i] = sequence[i+<span class="number">1</span>]</span><br><span class="line">                sequence[i+<span class="number">1</span>] = temp</span><br><span class="line">    <span class="keyword">return</span> sequence</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ex_seq = [<span class="number">12</span>, <span class="number">43</span>,<span class="number">13</span>, <span class="number">45</span>, <span class="number">8</span>, <span class="number">34</span>, <span class="number">9</span>, <span class="number">18</span>, <span class="number">20</span>, <span class="number">11</span>]</span><br><span class="line">result = bubblesort(ex_seq)</span><br></pre></td></tr></table></figure><p>result 结果为：[8, 9, 11, 12, 13, 18, 20, 34, 43, 45]</p><p>在交换两个元素的位置时，通常需要一个临时变量来进行存储，Python允许同时赋值，例如：a, b = b, a 利用这个特性，我们可以只使用一条一句完成元素的交换。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sequence[i], sequence[i+<span class="number">1</span>] = sequence[i+<span class="number">1</span>], sequence[i]</span><br></pre></td></tr></table></figure><p>假设列表中含有 <em>n</em> 个元素，那么第一轮将会遍历 <em>n-1</em> 次，第二轮将会遍历 <em>n-2</em> 次，依次类推，知道遍历结束为止。总的比较次数为1到 <em>n-1</em> 个整数之和，时间复杂度即为 $O(n^2)$。上<br>$$query,times = \frac{n(n-1)}{2} = \frac{1}{2}n^2-\frac{1}{2}n$$</p><p>冒泡排序通常被认为是效率最低的一个排序算法，因为他在确定最终位置之前必须交换元素，另外我们发现，如果在某一轮遍历中没有发生元素的交换，就这一表明列表以及有序，可以结束遍历，这种排序也成为<strong>短冒泡</strong>，代码如下所示：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">short_bubblesort</span> (<span class="params">sequence</span>):</span></span><br><span class="line">    sort_times = <span class="built_in">len</span>(sequence) <span class="number">-1</span></span><br><span class="line">    flag_exchange = <span class="literal">True</span></span><br><span class="line">    <span class="keyword">while</span> sort_times&gt;<span class="number">0</span> <span class="keyword">and</span> flag_exchange:</span><br><span class="line">        flag_exchange = <span class="literal">False</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(sort_times):</span><br><span class="line">            <span class="keyword">if</span> sequence[i]&gt;sequence[i+<span class="number">1</span>]:</span><br><span class="line">                flag_exchange = <span class="literal">True</span></span><br><span class="line">                sequence[i], sequence[i+<span class="number">1</span>] = sequence[i+<span class="number">1</span>], sequence[i]</span><br><span class="line">        sort_times -= <span class="number">1</span>    </span><br><span class="line">    <span class="keyword">return</span> sequence</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -150,9 +150,9 @@
     
     
     
-    <category term="学习" scheme="https://penggewudi.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
     <category term="pytorch" scheme="https://penggewudi.github.io/tags/pytorch/"/>
+    
+    <category term="学习" scheme="https://penggewudi.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   

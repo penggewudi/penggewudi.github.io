@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://penggewudi.github.io/2021/04/27/Bubble-Sort/</loc>
+    <loc>https://penggewudi.github.io/2021/02/27/Bubble-Sort/</loc>
     
     <lastmod>2021-04-27</lastmod>
     
@@ -123,6 +123,13 @@
   </url>
   
   <url>
+    <loc>https://penggewudi.github.io/tags/pytorch/</loc>
+    <lastmod>2021-04-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://penggewudi.github.io/tags/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
@@ -138,13 +145,6 @@
   
   <url>
     <loc>https://penggewudi.github.io/tags/Git/</loc>
-    <lastmod>2021-04-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://penggewudi.github.io/tags/pytorch/</loc>
     <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
