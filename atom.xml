@@ -6,7 +6,7 @@
   <link href="https://penggewudi.github.io/atom.xml" rel="self"/>
   
   <link href="https://penggewudi.github.io/"/>
-  <updated>2021-04-27T09:01:06.087Z</updated>
+  <updated>2021-04-30T02:14:38.250Z</updated>
   <id>https://penggewudi.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Selection Sort</title>
+    <link href="https://penggewudi.github.io/2021/03/11/Selection-Sort/"/>
+    <id>https://penggewudi.github.io/2021/03/11/Selection-Sort/</id>
+    <published>2021-03-11T01:27:04.000Z</published>
+    <updated>2021-04-30T02:14:38.250Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>选择排序</strong>在冒泡排序的基础之上进行改进，冒泡排序在每一次遍历时只要遇到不合乎顺序的元素排列就会进行变换，而选择排序在每一次遍历数组时只会进行一次交换，在便利的过程中保存最小项或者最大项的index，当完成一遍遍历后，进行元素的交换。</p><p>为了展示选择排序过程中元素的位置变化，将示意图展示如下：<br><img src= "/img/loading.gif" data-lazy-src="https://img-blog.csdnimg.cn/20210430100406568.gif#pic_center" alt="在这里插入图片描述"><br>Python代码编写如下：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">selectionsort</span> (<span class="params">sequence</span>):</span></span><br><span class="line">    sort_times = <span class="built_in">len</span>(sequence)<span class="number">-1</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(sort_times):</span><br><span class="line">        min_index = i</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(i+<span class="number">1</span>, <span class="built_in">len</span>(sequence)):</span><br><span class="line">            <span class="keyword">if</span> sequence[min_index] &gt; sequence[j]:</span><br><span class="line">                min_index = j</span><br><span class="line">        sequence[i], sequence[min_index] = sequence[min_index], sequence[i]</span><br><span class="line">    <span class="keyword">return</span> sequence</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ex_seq = [<span class="number">12</span>, <span class="number">43</span>,<span class="number">13</span>, <span class="number">45</span>, <span class="number">8</span>, <span class="number">34</span>, <span class="number">9</span>, <span class="number">18</span>, <span class="number">20</span>, <span class="number">11</span>]</span><br><span class="line">result = selectionsort(ex_seq)</span><br></pre></td></tr></table></figure><p>result 结果为：[8, 9, 11, 12, 13, 18, 20, 34, 43, 45]</p><p>选择排序与冒泡排序相比，仅仅是交换索引而不是交换元素，需要进行查询的次数相同，所以时间复杂度也相同，为$O(n^2)$。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;选择排序&lt;/strong&gt;在冒泡排序的基础之上进行改进，冒泡排序在每一次遍历时只要遇到不合乎顺序的元素排列就会进行变换，而选择排序在每一次遍历数组时只会进行一次交换，在便利的过程中保存最小项或者最大项的index，当完成一遍遍历后，进行元素的交换。&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="排序算法" scheme="https://penggewudi.github.io/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>Bubble Sort</title>
@@ -150,9 +173,9 @@
     
     
     
-    <category term="pytorch" scheme="https://penggewudi.github.io/tags/pytorch/"/>
-    
     <category term="学习" scheme="https://penggewudi.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="pytorch" scheme="https://penggewudi.github.io/tags/pytorch/"/>
     
   </entry>
   
